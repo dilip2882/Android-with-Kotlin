@@ -13,7 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // EditText inputEditText; (in Java)
+
+        /*// EditText inputEditText; (in Java)
         val inputEditText: EditText = findViewById(R.id.input_EditText)
         // Button button; (in Java)
         val button: Button = findViewById(R.id.bottom_button)
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             }
             Snackbar.make(it, input, Snackbar.LENGTH_SHORT).show()
 
-        }
+        }*/
 
 
     }
