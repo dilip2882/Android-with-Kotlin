@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -25,19 +26,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*// EditText inputEditText; (in Java)
-        val inputEditText: EditText = findViewById(R.id.input_EditText)
-        // Button button; (in Java)
-        val button: Button = findViewById(R.id.bottom_button)
-        button.setOnClickListener {
-            val input = inputEditText.text.toString()
-//            Toast.makeText(it.context, input, Toast.LENGTH_SHORT).show()
-            if (input.isEmpty()) {
-                return@setOnClickListener
-            }
-            Snackbar.make(it, input, Snackbar.LENGTH_SHORT).show()
+        val dataForAdapter = ArrayList<String>()
+        repeat(150) { index ->
+            dataForAdapter.add("Element $index")
+        }
 
-        }*/
+        val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
+        val simpleAdapter = SimpleAdapter()
+        simpleAdapter.setData(dataForAdapter)
+        recyclerView.adapter = simpleAdapter
+        simpleAdapter.notifyDataSetChanged()
 
 
     }
