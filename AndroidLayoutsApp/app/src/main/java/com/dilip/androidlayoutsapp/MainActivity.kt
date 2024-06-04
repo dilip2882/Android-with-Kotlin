@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 
@@ -34,6 +35,9 @@ class MainActivity : AppCompatActivity() {
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         val simpleAdapter = SimpleAdapter()
         simpleAdapter.setData(dataForAdapter)
+//        recyclerView.addItemDecoration(DividerItemDecoration(this, RecyclerView.VERTICAL))
+
+
         recyclerView.adapter = simpleAdapter
         simpleAdapter.notifyDataSetChanged()
 

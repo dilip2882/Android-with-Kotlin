@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="Material500">#673AB7</color>
+
+    <color name="light_background">#DEE6E5</color>
 </resources>
