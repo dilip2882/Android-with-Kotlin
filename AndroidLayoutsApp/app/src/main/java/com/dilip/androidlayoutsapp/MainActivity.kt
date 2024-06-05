@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         val simpleAdapter = SimpleAdapter()
-        simpleAdapter.setData(dataForAdapter)
+        simpleAdapter.setData(dataForAdapter, "IPL")
 //        recyclerView.addItemDecoration(DividerItemDecoration(this, RecyclerView.VERTICAL))
 
 
