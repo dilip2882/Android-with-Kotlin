@@ -1,6 +1,6 @@
 package com.dilip.ipl
 
-data class CricketTitle(
+data class CricketIpl(
     val id: String = "",
     val title: String = "",
     val description: String = "",

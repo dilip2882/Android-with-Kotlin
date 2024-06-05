@@ -1,10 +1,7 @@
 package com.dilip.ipl
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +12,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun getCricketList(): ArrayList<CricketTitle>{
-        return ArrayList<CricketTitle>().apply {
+    private fun getCricketList(): ArrayList<CricketIpl>{
+        return ArrayList<CricketIpl>().apply {
             add(
-                CricketTitle(
+                CricketIpl(
                     id = "royal_challengers_banglore",
                     title = "Royal Challengers Banglore",
                     description = "Ee Sala Cup Namde",
@@ -30,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             )
 
             add(
-                CricketTitle(
+                CricketIpl(
                     id = "chennai_super_kings",
                     title = "Chennai Super Kings",
                     description = "Yellow Pride",
@@ -42,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             )
 
             add(
-                CricketTitle(
+                CricketIpl(
                     id = "delhi_capitals",
                     title = "Delhi Capitals",
                     description = "Dilliwala Swag",
@@ -54,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             )
 
             add(
-                CricketTitle(
+                CricketIpl(
                     id = "kolkata_knight_riders",
                     title = "Kolkata Knight Riders",
                     description = "KKR",
@@ -66,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             )
 
             add(
-                CricketTitle(
+                CricketIpl(
                     id = "lucknow_super_giants",
                     title = "Lucknow Super Giants",
                     description = "New Era, New Champions",
@@ -78,7 +75,7 @@ class MainActivity : AppCompatActivity() {
             )
 
             add(
-                CricketTitle(
+                CricketIpl(
                     id = "mumbai_indians",
                     title = "Mumbai Indians",
                     description = "One Family. One Dream.",
@@ -90,7 +87,7 @@ class MainActivity : AppCompatActivity() {
             )
 
             add(
-                CricketTitle(
+                CricketIpl(
                     id = "punjab_kings",
                     title = "Punjab Kings",
                     description = "SherSquad",
@@ -102,7 +99,7 @@ class MainActivity : AppCompatActivity() {
             )
 
             add(
-                CricketTitle(
+                CricketIpl(
                     id = "rajasthan_royals",
                     title = "Rajasthan Royals",
                     description = "Halla Bol!",
@@ -114,7 +111,7 @@ class MainActivity : AppCompatActivity() {
                 )
             )
             add(
-                CricketTitle(
+                CricketIpl(
                     id = "sunrisers_hyderabad",
                     title = "Sunrisers Hyderabad",
                     description = "Orange Army",
@@ -126,7 +123,7 @@ class MainActivity : AppCompatActivity() {
                 )
             )
             add(
-                CricketTitle(
+                CricketIpl(
                     id = "gujarat_titans",
                     title = "Gujarat Titans",
                     description = "GT Gujarat",
