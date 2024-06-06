@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Business Card App</string>
+    <string name="name">Dilip Patel</string>
+    <string name="about">Android Developer Extraordinire</string>
+    <string name="phone_number">+911234567890</string>
+    <string name="twitter">\\@dilip2882</string>
+    <string name="email">pateldilip2902@gmail.com</string>
+</resources>
