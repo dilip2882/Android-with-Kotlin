@@ -11,11 +11,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material3.Button
-import androidx.compose.material3.Scaffold
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -32,7 +33,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             DiceRollerTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
                     DiceRollerAppPreview()
                 }
             }
@@ -41,11 +45,8 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun DiceWithButtonAndImage(modifier: Modifier = Modifier
-    .fillMaxSize()
-    .wrapContentSize(Alignment.Center)
-) {
-    var result by remember { mutableStateOf(1) }
+fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
+    var result by remember { mutableIntStateOf(1) }
     val imageResource = when (result) {
         1 -> R.drawable.dice_1
         2 -> R.drawable.dice_2
@@ -75,7 +76,8 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier
     showSystemUi = true)
 @Composable
 fun DiceRollerAppPreview() {
-    DiceRollerTheme {
-        DiceWithButtonAndImage()
-    }
+    DiceWithButtonAndImage(modifier = Modifier
+        .fillMaxSize()
+        .wrapContentSize(Alignment.Center)
+    )
 }
