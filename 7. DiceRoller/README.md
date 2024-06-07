@@ -27,4 +27,8 @@ This project implements a simple Dice Roller app using Jetpack Compose for Andro
 
 ## Screenshots
 
-[Image of the Dice Roller app](app/src/main/res/drawable/demo.png)
+<p align="center">
+  <a href="#">
+    <img src="app/src/main/res/drawable/demo.png" alt="Image of the Dice Roller app" style="vertical-align:top; margin:6px 4px">
+  </a> 
+</p>
