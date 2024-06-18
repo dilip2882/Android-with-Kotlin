@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.dilip.intentdatapassingexample"
+    namespace = "com.dilip.toolbarmenu"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.dilip.intentdatapassingexample"
+        applicationId = "com.dilip.toolbarmenu"
         minSdk = 30
         targetSdk = 34
         versionCode = 1
@@ -35,7 +35,6 @@ android {
     }
 
     buildFeatures {
-        dataBinding = true
         viewBinding = true
     }
 }
