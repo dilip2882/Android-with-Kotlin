@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- No button needed for Activity E as it's the last one in the sequence -->
+    <TextView
+        android:id="@+id/text_view_activity_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity E"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
